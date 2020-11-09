@@ -1,0 +1,512 @@
+/* default css */
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: url("../fonts/Geometria.ttf");
+}
+
+.my_container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.white {
+    color: white !important;
+}
+
+ul li {
+    list-style-type: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* default css */
+
+
+
+
+/* button to top */
+
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 62px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* button to top */
+
+
+
+
+
+/* main_header */
+
+.main_header {
+    width: 99.1vw;
+    height: 95.8vh;
+    position: relative;
+    box-shadow: 7px 0px 61px -18px #0A0C09;
+    display: block;
+}
+
+.main_header section {
+    width: 100%;
+}
+
+.main_header section video {
+    width: 100%;
+}
+
+
+
+
+.main_header .typed_text {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_header .typed_text .text {
+    width: 100%;
+    text-align: center;
+}
+
+.main_header .typed_text .text p {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.main_header .typed_text .text span {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    color: white;
+    position: relative;
+    bottom: 7px;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+
+
+.main_header #site-header {
+    height: 110px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.main_header #site-header .my_container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    width: 1120px;
+}
+
+.main_header #site-header .my_container a img {
+    width: 120px;
+}
+
+.main_header #site-header .my_container .buttons ul {
+    display: flex;
+    margin: 0;
+}
+
+.main_header #site-header .my_container .buttons ul li {
+    margin: 0 15px;
+}
+
+.main_header #site-header .my_container .buttons ul li a p {
+    color: white;
+    font-size: 17px;
+    margin: 0;
+}
+
+.main_header #site-header .my_container .buttons ul li a .phone {
+    font-family: 'Geometria';
+    font-size: 23px;
+    font-weight: bold;
+    position: relative;
+    bottom: 4px;
+}
+
+/* main_header */
+
+
+
+
+/* about us */
+
+.about_us {
+    margin-top: 30px;
+}
+
+.about_us .my_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about_us .my_container .text {
+    width: 50%;
+}
+
+.about_us .my_container .text h1 {
+    display: inline-block;
+    font-size: 45px;
+    font-weight: bold;
+    text-indent: 20px;
+}
+
+.about_us .my_container .text p {
+    font-size: 22px;
+    text-indent: 20px;
+}
+
+.about_us .my_container .text img {
+    width: 50px;
+    display: inline-block;
+    position: relative;
+    bottom: 9px;
+}
+
+.about_us .my_container>img {
+    width: 45%;
+}
+
+/* about us */
+
+
+
+
+/* directions */
+
+.directions .triangle {
+    width: 0;
+	height: 0;
+	border-bottom: 150px solid #273036; 
+    border-left: 99.1vw solid transparent;
+}
+
+.directions .content {
+    background-color: #273036;
+}
+
+.directions .content .my_container {
+    color: white;
+    position: relative;
+    padding-bottom: 63px;
+}
+
+.directions .content .my_container img {
+    position: absolute;
+    right: 0;
+    top: 27px;
+}
+
+.directions .content .my_container h1 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 45.5px;
+    margin-top: 63px;
+}
+
+.directions .content .my_container i {
+    display: inline-block;
+    font-size: 45px;
+    position: relative;
+    bottom: 3px;
+}
+
+.directions .content .my_container p {
+    font-size: 17.2px;
+}
+
+.directions .content .my_container .phrase {
+    width: 60%;
+    margin-bottom: 36px;
+}
+
+.directions .content .my_container .quote {
+    width: 45%;
+    font-style: italic;
+    font-size: 15.4px;
+}
+
+/* directions */
+
+
+
+
+
+/* programming */
+
+.vr {
+    position: absolute;
+    top: -100px;
+    left: 40px;
+    width: 390px;
+}
+
+.macbook {
+    position: absolute;
+    bottom: -200px;
+    right: 10px;
+    width: 550px;
+}
+
+
+
+
+.programming {
+    background-color: rgb(5, 5, 5);
+    position: relative;
+    box-shadow: 7px 0px 61px -18px #0A0C09;
+    padding-top: 135px;
+    padding-bottom: 45px;
+}
+
+.programming p {
+    color: #828787;
+}
+
+.programming .content .my_container>p {
+    font-size: 18px;
+}
+
+.programming .content .my_container .info .box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 27px 0;
+}
+
+.programming .content .my_container .info .box img {
+    width: 315px;
+    transition: 0.4s;
+}
+
+.programming .content .my_container .info .box>img:hover {
+    transform: scale(1.2);
+}
+
+.programming .content .my_container .info .box .text {
+    width: 630px;
+}
+
+.programming .content .my_container .info .box .text h2 {
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.programming .content .my_container .info .box .text p {
+    font-size: 18.9px;
+}
+
+.programming .content .my_container .info .box .text .mini_logo {
+    width: 40.5px;
+    display: inline-block;
+    position: relative;
+    bottom: 13.5px;
+    margin: 0 4.5px;
+}
+
+.css {
+    width: 36.9px !important;
+    bottom: 15.3px !important;
+}
+
+.js {
+    width: 37.1px !important;
+    bottom: 10.8px !important;
+}
+
+
+
+
+.programming .sliders {
+    margin-top: 81px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.programming .sliders img {
+    width: 63px;
+}
+
+/* programming */
+
+
+
+
+/* three d */
+
+.apple_pencil {
+    width: 450px;
+    position: absolute;
+    bottom: -100px;
+    left: -10px;
+}
+
+
+
+
+
+.three-d {
+    padding-top: 70px;
+    position: relative;
+}
+
+.three-d .my_container>h1 {
+    font-weight: bold;
+    font-size: 70px;
+    text-shadow: 6px -6px 0px #00e6e6, 10px -9px 0px #01cccc, 13px -12px 0px #00bdbd;
+}
+
+.three-d .my_container>p {
+    font-size: 18px;
+}
+
+
+.three-d .my_container .desc {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 27px 0;
+}
+
+.three-d .my_container .desc>img {
+    width: 315px;
+    transition: 0.4s;
+    box-shadow: 7px 0px 64px -24px #0A0C09;
+}
+
+.three-d .my_container .desc>img:hover {
+    transform: scale(1.2);
+}
+
+.three-d .my_container .desc .text {
+    width: 630px;
+}
+
+.three-d .my_container .desc .text h2 {
+    font-size: 34px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.three-d .my_container .desc .text>p {
+    font-size: 19.5px;
+}
+
+.three-d .my_container .desc .text .mini_logo {
+    width: 40.5px;
+    display: inline-block;
+    position: relative;
+    bottom: 7px;
+    margin: 0 4.5px;
+}
+
+.gimp {
+    width: 52px !important;
+    bottom: 6px !important;
+}
+
+.blender {
+    bottom: 9px !important;
+}
+
+.maya {
+    bottom: 8px !important;
+}
+
+.dsmax {
+    width: 35px !important;
+}
+
+
+.three-d .sliders {
+    margin-top: 81px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.three-d .sliders img {
+    width: 63px;
+}
+
+/* three d */
